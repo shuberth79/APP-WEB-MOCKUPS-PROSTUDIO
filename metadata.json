@@ -1,0 +1,7 @@
+{
+  "name": "MOCKUPS-PROSTUDIO",
+  "description": "Professional product mockup generator for Etsy sellers. Leverage Gemini 2.5 Flash Image to create high-converting product shots for apparel, mugs, and accessories based on 2025 market trends.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
