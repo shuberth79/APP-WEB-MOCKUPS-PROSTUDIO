@@ -2,6 +2,7 @@
 export enum MockupType {
   TSHIRT = 'TSHIRT',
   SWEATSHIRT = 'SWEATSHIRT',
+  HOODIE = 'HOODIE',
   MUG = 'MUG',
   BLANKET = 'BLANKET',
   NOTEBOOK = 'NOTEBOOK',
@@ -10,7 +11,7 @@ export enum MockupType {
 }
 
 export type MockupQuantity = 'Solo' | 'Duo' | 'Trio' | 'Family' | '1' | '2' | '3';
-export type Gender = 'Hombre' | 'Mujer' | 'Ambos'; // Added "Ambos"
+export type Gender = 'Hombre' | 'Mujer' | 'Ambos';
 export type Resolution = 'Baja' | 'Media' | 'HD' | 'UHD' | '8K Expert';
 
 export interface ChatMessage {
@@ -21,7 +22,7 @@ export interface ChatMessage {
 export interface MockupOptions {
   ethnicity: string;
   physicalTrait: string;
-  gender: Gender; // Added gender
+  gender: Gender;
   style: string;
   location: string;
   environment: string;
@@ -46,13 +47,12 @@ export interface GeneratedImage {
   isEdited?: boolean;
 }
 
-// New types for ManualMontagePreview component props to reflect new sliders
 export interface ManualMontageOptions {
   designX: number;
   designY: number;
   designScale: number;
   designRotation: number;
-  designOpacity: number; // New: opacity
-  designPerspectiveX: number; // New: perspective X
-  designPerspectiveY: number; // New: perspective Y
+  designOpacity: number;
+  designPerspectiveX: number;
+  designPerspectiveY: number;
 }

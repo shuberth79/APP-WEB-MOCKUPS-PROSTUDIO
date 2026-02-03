@@ -1,5 +1,4 @@
 
-
 import { MockupType, MockupConfig, MockupQuantity, Gender } from './types';
 
 export const MOCKUP_CATEGORIES: MockupConfig[] = [
@@ -12,6 +11,12 @@ export const MOCKUP_CATEGORIES: MockupConfig[] = [
   {
     id: MockupType.SWEATSHIRT,
     title: 'Sudadera',
+    icon: '🧥',
+    allowedQuantities: ['Solo', 'Duo', 'Trio', 'Family']
+  },
+  {
+    id: MockupType.HOODIE,
+    title: 'Hoodie',
     icon: '🧥',
     allowedQuantities: ['Solo', 'Duo', 'Trio', 'Family']
   },
@@ -43,7 +48,7 @@ export const MOCKUP_CATEGORIES: MockupConfig[] = [
 
 export const ETHNICITIES = ['Anglosajón', 'Nórdico', 'Afroamericano', 'Indio', 'Asiático', 'Latino'];
 export const PHYSICAL_TRAITS = ['Cabello Rubio', 'Cabello Moreno', 'Ojos Claros', 'Ojos Cafés', 'Ojos Verdes', 'Ojos Azules'];
-export const GENDERS: Gender[] = ['Hombre', 'Mujer', 'Ambos']; // Added "Ambos"
+export const GENDERS: Gender[] = ['Hombre', 'Mujer', 'Ambos'];
 export const STYLES = ['Urbano', 'Skateboard', 'Reguetón', 'Formal', 'Semiformal', 'Ocasional', 'Relajado', 'Cocktail'];
 export const LOCATIONS = ['Interior', 'Exterior', 'Parque', 'Fiesta en Jardín', 'Discoteca', 'Cafetería'];
 export const ENVIRONMENTS = ['Día', 'Noche', 'Atardecer', 'Anochecer'];
